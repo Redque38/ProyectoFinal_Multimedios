@@ -5,6 +5,7 @@
 body{
     background-color: #eee;
 }
+
 /*login & register*/
 .info{
     border: 0;
@@ -67,7 +68,21 @@ img:hover {
 div.container.row.touch{
 max-width: 100%;
 }
-
+/*recipes*/
+div.row.table-pink 
+{ 
+    display: flex; 
+    background-color: fuchsia; 
+} 
+ 
+div.row.table-grey{ 
+    display: flex; 
+    background-color: lightgray; 
+} 
+ 
+div.container.row{ 
+    margin: 0 auto; 
+} 
 /*Modal*/
 #logreg-forms{
     width:100%;
