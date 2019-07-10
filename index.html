@@ -20,41 +20,36 @@
         crossorigin="anonymous"></script>
     <!-- Barra de navegación -->
     <header>
-            <link rel="import" href="layout.html">
+        <link rel="import" href="layout.html">
     </header>
     <nav class="navbar navbar-inverse navbar-expand-lg navbar-form">
-        <div class="container-fluid">        
+        <div class="container-fluid">
             <form id="searchForm" class="form-inline my-2 my-lg-0">
                 <a class="navbar-brand" href="index.html"><i class="fas fa-hamburger"></i></a>
                 <input id="searchText" class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                <a class="btn btn-secondary my-2 my-sm-0" type="submit" href="recipe.html">Search</a>
             </form>
             <ul class="nav navbar-nav navbar-right">
                 <li class="ls-menu"><a class="btn btn-link" href="#" onclick="mostrarLogin()" data-toggle="modal"
                         data-target="#modalLogin">Login</a></li>
-                
+
                 <li class="ls-menu"><a class="btn btn-warning" href="#" onclick="mostrarRegistro()" data-toggle="modal"
                         data-target="#modalRegister">Register</a></li>
-                        
+
                 <li class="ms-menu">
                     <div class="dropdown show">
-                        <a class="btn btn-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="btn btn-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fas fa-bars"></i>
                         </a>
-                      
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <a class="dropdown-item" href="#">Register</a>
-                          <a class="dropdown-item" href="#">Login</a>
-                        </div>
-                      </div>  
-                    </li>         
-            </ul>
-    <div class="col-md-3">
-        <div class="well text-center">
-            <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#modalLogin">Login</a>
 
-            <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#modalRegister">Register</a>
-        </div>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Register</a>
+                            <a class="dropdown-item" href="#">Login</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
     </nav>
 
     <!-- Modal para login -->
@@ -122,7 +117,7 @@
                     <h5 class="modal-title" id="modalLabel">Create an account</h5>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
                 </div>
-                <div class="modal-body" >
+                <div class="modal-body">
 
                     <div id="logreg-forms" class="info">
                         <form class="form-signin">
@@ -157,7 +152,8 @@
                             <input style="text-align: center" type="password" id="inputConfPassword"
                                 class="form-control" placeholder="Confirm Password" required="">
 
-                                <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div> <!--Test key Llave para probar captcha-->
+                            <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                            <!--Test key Llave para probar captcha-->
 
                             <div>
                                 <label>
@@ -179,7 +175,8 @@
                                                 class="fas fa-sign-in-alt"></i>
                                             Create Account</button>
                                         <div style="padding-top: 35px; font-size: 85%; ">Do you have an account? <a
-                                                style="display: inline;" href="#" data-dismiss="modal" data-toggle="modal" data-target="#modalLogin">
+                                                style="display: inline;" href="#" data-dismiss="modal"
+                                                data-toggle="modal" data-target="#modalLogin">
 
                                                 Sign in Here!
 
@@ -205,11 +202,11 @@
         <a href="">Option 6</a>
         <a href="">Option 7</a>
         <a href="">Option 8</a>
-    </div>  
+    </div>
     <!-- Imagen principal -->
     <div class="main-recipe">
-        <img src="http://lorempixel.com/1500/1000/food" class="menu-img"/>
-        
+        <img src="http://lorempixel.com/1500/1000/food" class="menu-img" />
+
     </div>
 
     <!-- Catalogo de Recetas-->
@@ -218,71 +215,71 @@
             <p>Sort by: <span><a class="dropbtn" href="">Relevance</a></p>
         </div>
         <div class="frst-col-recipes">
-           <div > <img src="http://lorempixel.com/200/209/food" alt="sada" class="normal-img"> 
-            <h5> Recipe name</h5>
-            <h6>By Admin</h6>
-            <i class="fas fa-heart"></i>
-            </div> 
-            <div ><img src="http://lorempixel.com/200/209/food" alt="sada" class="normal-img"> 
+            <div> <img src="http://lorempixel.com/200/209/food" alt="sada" class="normal-img">
                 <h5> Recipe name</h5>
                 <h6>By Admin</h6>
                 <i class="fas fa-heart"></i>
-            </div> 
-            <div>
-                <i class="fas fa-heart like-top"></i>
-                <img src="http://lorempixel.com/200/409/food" alt="sada" class="bigger-img"> 
-            </div>         
-        </div>
-        <div class="scnd-col-recipes">
-            <div >
-                <i class="fas fa-star favorite-top"></i> 
-                <img src="http://lorempixel.com/200/200/food" alt="sada" class="favorite-img"> 
+            </div>
+            <div><img src="http://lorempixel.com/200/209/food" alt="sada" class="normal-img">
                 <h5> Recipe name</h5>
                 <h6>By Admin</h6>
-            </div> 
-            <div> 
-                <img src="http://lorempixel.com/200/200/food" alt="sada" class="normal-img"> 
+                <i class="fas fa-heart"></i>
+            </div>
+            <div>
+                <i class="fas fa-heart like-top"></i>
+                <img src="http://lorempixel.com/200/409/food" alt="sada" class="bigger-img">
+            </div>
+        </div>
+        <div class="scnd-col-recipes">
+            <div>
+                <i class="fas fa-star favorite-top"></i>
+                <img src="http://lorempixel.com/200/200/food" alt="sada" class="favorite-img">
+                <h5> Recipe name</h5>
+                <h6>By Admin</h6>
+            </div>
+            <div>
+                <img src="http://lorempixel.com/200/200/food" alt="sada" class="normal-img">
                 <h5> Recipe name</h5>
                 <h6>By Admin</h6>
                 <i class="fas fa-heart "></i>
-            </div> 
-            <div> 
-                <img src="http://lorempixel.com/200/200/food" alt="sada" class="normal-img"> 
-                    <h5> Recipe name</h5>
-                    <h6>By Admin</h6>
-                    <i class="fas fa-heart "></i>
-                </div> 
+            </div>
+            <div>
+                <img src="http://lorempixel.com/200/200/food" alt="sada" class="normal-img">
+                <h5> Recipe name</h5>
+                <h6>By Admin</h6>
+                <i class="fas fa-heart "></i>
+            </div>
         </div>
         <div class="thrd-col-recipes">
             <div class="bigger-img-div">
-                <i class="fas fa-heart like-top"></i> 
-                <img src="http://lorempixel.com/205/405/food" alt="sada" class="bigger-img"> 
-                </div> 
-                <div > <img src="http://lorempixel.com/205/205/food" alt="sada" class="normal-img"> 
-                    <h5> Recipe name</h5>
-                    <h6>By Admin</h6>
-                    <i class="fas fa-heart"></i>
-                </div> 
-                <div>
-                    <img src="http://lorempixel.com/205//food" alt="sada" class="normal-img"> 
-                    <h5> Recipe name</h5>
-                    <h6>By Admin</h6>
-                    <i class="fas fa-heart"></i>
-                </div>
-        </div>
-        <div class="fth-col-recipes">
-            <div > 
-                <img src="http://lorempixel.com/305/209/food" alt="sada" class="normal-img"> 
+                <i class="fas fa-heart like-top"></i>
+                <img src="http://lorempixel.com/205/405/food" alt="sada" class="bigger-img">
+            </div>
+            <div> <img src="http://lorempixel.com/205/205/food" alt="sada" class="normal-img">
                 <h5> Recipe name</h5>
                 <h6>By Admin</h6>
                 <i class="fas fa-heart"></i>
-            </div> 
-            <div class="bigger-img-div"> 
-                <i class="fas fa-heart like-top"></i>
-                <img src="http://lorempixel.com/230/410/food" alt="sada" class="bigger-img"> 
-            </div> 
+            </div>
             <div>
-                <img src="http://lorempixel.com/300/219/food" alt="sada" class="normal-img"> 
+                <img src="http://lorempixel.com/205//food" alt="sada" class="normal-img">
+                <h5> Recipe name</h5>
+                <h6>By Admin</h6>
+                <i class="fas fa-heart"></i>
+            </div>
+        </div>
+        <div class="fth-col-recipes">
+            <div>
+                <img src="http://lorempixel.com/305/209/food" alt="sada" class="normal-img">
+                <h5> Recipe name</h5>
+                <h6>By Admin</h6>
+                <i class="fas fa-heart"></i>
+            </div>
+            <div class="bigger-img-div">
+                <i class="fas fa-heart like-top"></i>
+                <img src="http://lorempixel.com/230/410/food" alt="sada" class="bigger-img">
+            </div>
+            <div>
+                <img src="http://lorempixel.com/300/219/food" alt="sada" class="normal-img">
                 <h5> Recipe name</h5>
                 <h6>By Admin</h6>
                 <i class="fas fa-heart"></i>
@@ -298,8 +295,12 @@
     <!-- Footer-->
     <div id="footer">
         <div class="frst-col-footer">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos optio praesentium ad eum, ullam, quibusdam deleniti expedita dicta culpa earum sit sapiente illum est qui vitae explicabo debitis blanditiis sint.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, in asperiores. Cupiditate, incidunt aliquid velit officia accusamus modi hic obcaecati quo eos libero labore commodi, doloremque accusantium dignissimos esse dicta!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos optio praesentium ad eum, ullam, quibusdam
+                deleniti expedita dicta culpa earum sit sapiente illum est qui vitae explicabo debitis blanditiis sint.
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, in asperiores. Cupiditate, incidunt
+                aliquid velit officia accusamus modi hic obcaecati quo eos libero labore commodi, doloremque accusantium
+                dignissimos esse dicta!</p>
         </div>
         <div class="scnd-col-footer">
             <hgroup>
@@ -313,29 +314,35 @@
         </div>
         <div class="thrd-col-footer">
             <h3>Recent</h3>
-            <p><img src="https://ipsumimage.appspot.com/50x70,ff7777" alt="wqd">RecipeName <br> By Admin <br> 06 sep 2018</p>
-            <p><img src="https://ipsumimage.appspot.com/50x70,ff7777" alt="wqd">RecipeName <br> By Admin <br> 06 sep 2018</p>
-            <p><img src="https://ipsumimage.appspot.com/50x70,ff7777" alt="wqd">RecipeName <br> By Admin <br> 06 sep 2018</p>
+            <p><img src="https://ipsumimage.appspot.com/50x70,ff7777" alt="wqd">RecipeName <br> By Admin <br> 06 sep
+                2018</p>
+            <p><img src="https://ipsumimage.appspot.com/50x70,ff7777" alt="wqd">RecipeName <br> By Admin <br> 06 sep
+                2018</p>
+            <p><img src="https://ipsumimage.appspot.com/50x70,ff7777" alt="wqd">RecipeName <br> By Admin <br> 06 sep
+                2018</p>
         </div>
         <div class="legal-term-footer">
-            <a >
-              2019- ALL RIGHTS RESERVED  
-            </a>  
-            <a class="rights-term-right">
-                PRIVACY POLICY 
-            </a> 
             <a>
-                TERMS OF SERVICE  
-            </a> 
+                2019- ALL RIGHTS RESERVED
+            </a>
+            <a class="rights-term-right">
+                PRIVACY POLICY
+            </a>
+            <a>
+                TERMS OF SERVICE
+            </a>
             <a>
                 ACCEPTABLE USER POLICY
-            </a>  
+            </a>
             <a>
-                SERVICE LEVEL AGREEMENT  
-            </a> 
+                SERVICE LEVEL AGREEMENT
+            </a>
+            <a href="about.html">
+                ABOUT US
+            </a>
         </div>
-    </div>    
-    
+    </div>
+
 
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>

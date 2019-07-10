@@ -12,6 +12,7 @@ body{
     box-shadow: 0;
 }
 
+
 div.container.aboutUs,
 div.col-md-3
 {
@@ -257,6 +258,10 @@ div.container.row{
 }
 .jumbotron .col-6 h3{
     font-size: 3.5vw;
+}
+
+div.col-6{
+    max-width: 100% !important;
 }
 .rate{
     margin-top: 20px;
