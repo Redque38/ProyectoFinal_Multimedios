@@ -1,6 +1,10 @@
 *{
     text-align: justify;
 }
+
+body{
+    background-color: #eee;
+}
 /*login & register*/
 .info{
     border: 0;
